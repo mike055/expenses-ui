@@ -1,0 +1,14 @@
+<% include ../layouts/header %>
+
+  <!-- show any messages that come back with authentication -->
+	<% if (errors.length > 0) { %>
+		<div class="alert alert-danger"><%= errors %></div>
+	<% } %>
+
+	<div class="jumbotron text-center">
+		<h1><span class="fa fa-lock"></span> Super secret business</h1>
+
+		<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Login</a>
+	</div>
+
+<% include ../layouts/footer %>

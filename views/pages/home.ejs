@@ -1,0 +1,16 @@
+<% include ../layouts/header %>
+
+  <!-- show any messages that come back with authentication -->
+	<% if (messages.length > 0) { %>
+		<div class="alert alert-success"><%= messages %></div>
+	<% } %>
+
+	<div class="jumbotron text-center">
+		<h1>What do you want to do?</h1>
+
+		<a href="add" class="btn btn-primary"><span class="fa fa-usd"></span> Add expense</a>
+		<a href="reviewExpenses" class="btn btn-primary"><span class="fa fa-line-chart"></span> Review expenses</a>
+		<a href="upload" class="btn btn-primary"><span class="fa fa-upload"></span> Upload document</a>
+	</div>
+
+<% include ../layouts/footer %>

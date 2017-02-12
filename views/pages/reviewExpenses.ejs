@@ -1,0 +1,19 @@
+<% include ../layouts/header %>
+
+  <!-- show any messages that come back with authentication -->
+	<% if (messages.length > 0) { %>
+		<div class="alert alert-success"><%= messages %></div>
+	<% } %>
+
+	<div class="jumbotron add-expense-page">
+	  <h1 class="text-center">Review expenses</h1>
+		<div id="reviewExpensesPage"></div>
+
+    <div class="back-link">
+		  <a href="home"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
+		</div>
+	</div>
+
+<script src="reviewExpensesPage.js"></script>
+
+<% include ../layouts/footer %>
