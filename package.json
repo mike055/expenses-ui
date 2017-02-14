@@ -1,18 +1,40 @@
 {
-  "name": "expenses-ui",
-  "version": "0.0.0",
-  "devDependencies": {
-    "react-scripts": "0.9.0"
+  "name": "money-life",
+  "version": "0.1.0",
+  "description": "Keep track of expenses",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "babel-node server.js",
+    "client": "babel-node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-router": "^4.0.0-beta.5"
+    "babel-cli": "6.14.0",
+    "babel-core": "6.14.0",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "dotenv": "^4.0.0",
+    "ejs": "~0.8.5",
+    "express": "^4.14.0",
+    "express-session": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "passport": "~0.1.17",
+    "passport-google-oauth": "~0.1.5"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.9.0"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "keywords": []
 }
